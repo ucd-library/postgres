@@ -25,7 +25,7 @@ RUN apt-get update \
 RUN git clone https://github.com/plv8/plv8.git --branch v${PLV8_VERSION} --single-branch && \
   cd /plv8 && \
   make && \
-  make install \
+  make install && \
   rm -rf /plv8
 
 RUN mkdir -p /docker-entrypoint-initdb.d

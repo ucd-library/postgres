@@ -1,0 +1,15 @@
+{
+  "registry" : "us-west1-docker.pkg.dev/digital-ucdavis-edu/pub",
+
+  "images" : {
+    "postgres" : {
+      "contextPath" : ".",
+      "options" : {
+        "build-arg" : [
+          "PG_VERSION=16",
+          "PLV8_VERSION=3.2.2"
+        ]
+      }
+    }
+  }
+}

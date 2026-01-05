@@ -43,6 +43,7 @@ RUN apt-get update \
         postgis \
         postgresql-${PG_VERSION}-postgis-3 \
         postgresql-${PG_VERSION}-postgis-3-scripts \
+        postgresql-${PG_VERSION}-cron \
         libstdc++-12-dev \
       && rm -rf /var/lib/apt/lists/*
 

@@ -45,6 +45,7 @@ RUN apt-get update \
         postgresql-${PG_VERSION}-postgis-3 \
         postgresql-${PG_VERSION}-postgis-3-scripts \
         postgresql-${PG_VERSION}-cron \
+        postgresql-${PG_VERSION}-pgvector \
         libstdc++-12-dev \
       && rm -rf /var/lib/apt/lists/*
 

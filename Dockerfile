@@ -61,3 +61,5 @@ ENV POSTGRES_PASSWORD=postgres
 ENV POSTGRES_USER=postgres
 ENV POSTGIS_ENABLE_OUTDB_RASTERS=1
 ENV POSTGIS_GDAL_ENABLED_DRIVERS=ENABLE_ALL
+
+CMD ["postgres", "-c", "shared_preload_libraries=pg_stat_statements,pg_cron"]
